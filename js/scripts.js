@@ -55,6 +55,8 @@ $(function() {
       newContact.addresses.push(newAddress);
     });
 
+    $(".new-address").not([0]).remove();
+
     $("ul#contacts").append("<li><span class='contact'>" + newContact.fullName() + "</span></li>");
 
     $(".contact").last().click(function() {
